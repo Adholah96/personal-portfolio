@@ -217,9 +217,9 @@ Example:
 
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **Better UI/UX style**
-- [ ] **Responsive Design**
-- [ ] **Website version**
+- **Better UI/UX style**
+- **Responsive Design**
+- **Website version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
