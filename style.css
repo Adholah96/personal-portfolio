@@ -5,23 +5,29 @@
 }
 
 .menu-burger div {
-  height: 3px;
-  width: 25px;
+  height: 2px;
+  width: 23px;
   background-color: black;
   margin: 4px;
 }
 
 .logo h1 {
   font-family: 'Inter', sans-serif;
+  font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  height: 28px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #28352f;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 1.5rem;
 }
 
 main .info-bio h1 {
@@ -34,12 +40,13 @@ main .info-bio h1 {
   color: #172b4d;
   margin-top: 3.5rem;
 }
+
 .inner-text {
   color: #36b37f;
 }
 
 main .info-bio p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -57,16 +64,16 @@ main .info-bio p {
   gap: 20px;
   margin-top: 2rem;
 }
-.social a i{
-    font-size: 1.5em;
-    color: #505F79;
+
+.social a i {
+  font-size: 1.5em;
+  color: #505f79;
 }
-.social a img{
-    height: 1.5rem;
+
+.social a img {
+  height: 1.5rem;
 }
-header {
-  margin: 0 1.5rem;
-}
+
 main {
   background-image: url('./assets/header-illsutration-mobile.png');
   background-repeat: no-repeat;
@@ -76,10 +83,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.drop{
-    border-radius: 50%;
-    border: 1px solid lightgray;
-    padding: 1rem;
-    align-self: center;
-    margin-top: 2.5rem;
+
+.drop {
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  align-self: center;
+  margin-top: 2.5rem;
 }
