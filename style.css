@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 * {
   border: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 .menu-burger div {
@@ -10,8 +12,14 @@
   background-color: black;
   margin: 4px;
 }
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
 
-.logo h1 {
+.logo {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -23,7 +31,7 @@
   color: #28352f;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +62,7 @@ main .info-bio p {
   text-align: center;
   color: #172b4d;
   margin: 0 1.5rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .social {
@@ -63,6 +71,7 @@ main .info-bio p {
   align-items: center;
   gap: 20px;
   margin-top: 2rem;
+  list-style-type: none;
 }
 
 .social a i {
