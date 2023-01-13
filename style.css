@@ -102,3 +102,111 @@ main {
   align-self: center;
   margin-top: 2.5rem;
 }
+section {
+  margin-top: 4em;
+}
+.desc {
+  width: 327px;
+  height: 97px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 26px auto;
+  color: #172b4d;
+  padding: 1em;
+  margin-top: -0.5em;
+}
+.divider {
+  width: 48px;
+  height: 4px;
+  background-color: #36b37e;
+  border-radius: 24px;
+  margin: 80px auto 0px;
+}
+
+.cards {
+  margin: 0 20px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  border: 2px solid #ebf0ee;
+}
+img {
+  /* height: 50%; */
+  width: 100%;
+}
+.card {
+  text-align: center;
+}
+.card h1 {
+  width: auto;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px auto;
+  color: #3a4a42;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills li {
+  align-items: center;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 5px;
+}
+.card button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  left: calc(50% - 122px / 2 + 0.5px);
+  bottom: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(auto, minmax(400px, auto)); */
+  grid-gap: 20px;
+}
+.about-me h1 {
+  width: 351px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* text-align: center; */
+  color: #172b4d;
+}
+.about-me p {
+  width: 351px;
+  height: 189px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  /* text-align: center; */
+  color: #42526e;
+}
+.about-me .get-my-resume{
+/* align-items: center; */
+padding: 12px;
+width: 159px;
+height: 48px;
+background: #36B37F;
+border-radius: 4px;
+margin: 20px auto;
+}
