@@ -41,8 +41,8 @@ a:active {
 }
 
 .card h1 {
-  width: auto;
-  height: 57px;
+  /* width: auto;
+  height: 57px; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -66,14 +66,12 @@ a:active {
 }
 
 .nested-card h1 {
-  width: auto;
-  height: 57px;
+  text-align: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin: 10px auto;
   color: #3a4a42;
 }
 
@@ -201,7 +199,13 @@ section {
 }
 
 .card {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+
+  /* text-align: center; */
 }
 
 .skills {
@@ -221,6 +225,24 @@ section {
 
 button {
   transition: all 1s ease;
+}
+
+.nested-card button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  bottom: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .card button {
@@ -262,24 +284,23 @@ button {
 
 .about-me-skills .card {
   border: 2px solid #ebf0ee;
-  margin: 0 20px;
+
+  /* margin: 0 20px; */
   border-radius: 4px;
   background-color: #ebf0ee;
+  margin: 3%;
+}
+
+.nested-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-me-skills .nested-card {
   padding: 20px 0;
-}
-
-.nested-card button {
-  padding: 12px;
-  width: 122px;
-  height: 48px;
-  left: calc(50% - 122px / 2 + 0.5px);
-  bottom: 8px;
-  background: #36b37f;
-  border-radius: 4px;
-  color: white;
 }
 
 .about-me-skills {
@@ -293,14 +314,30 @@ button {
   color: #36b37e;
 }
 
-button:hover {
+.card button:hover {
   cursor: pointer;
   transform: scale(1.1);
-  background-color: #c5e9da;
+  background-color: #36b37f;
+}
+
+.card button:enabled {
+  background-color: #36b37f;
+}
+
+.card button:active {
+  background-color: #008552;
 }
 
 .get-my-resume:hover {
   cursor: pointer;
   transform: scale(1.1);
-  background-color: #c5e9da;
+  background-color: #36b37f;
+}
+
+.get-my-resume:enabled {
+  background-color: #36b37f;
+}
+
+.get-my-resume:active {
+  background-color: #008552;
 }
