@@ -40,6 +40,43 @@ a:active {
   margin: 0 1.5rem;
 }
 
+.card h1 {
+  width: auto;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px auto;
+  color: #3a4a42;
+}
+
+.about-me h1 {
+  margin-bottom: -0.3rem;
+  width: 351px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.nested-card h1 {
+  width: auto;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px auto;
+  color: #3a4a42;
+}
+
 main .info-bio h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -53,6 +90,18 @@ main .info-bio h1 {
 
 .inner-text {
   color: #36b37f;
+}
+
+.about-me p {
+  width: 351px;
+  height: 189px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
 
 main .info-bio p {
@@ -81,6 +130,20 @@ main .info-bio p {
   color: #505f79;
 }
 
+img {
+  /* height: 50%; */
+  width: 100%;
+  border: 2px solid #ebf0ee;
+  object-fit: cover;
+}
+
+.about-me-skills img {
+  margin-top: 40px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+
 .social a img {
   height: 1.5rem;
 }
@@ -88,7 +151,7 @@ main .info-bio p {
 main {
   background-image: url('./assets/header-illsutration-mobile.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -102,9 +165,11 @@ main {
   align-self: center;
   margin-top: 2.5rem;
 }
+
 section {
   margin-top: 4em;
 }
+
 .desc {
   width: 327px;
   height: 97px;
@@ -119,12 +184,13 @@ section {
   padding: 1em;
   margin-top: -0.5em;
 }
+
 .divider {
   width: 48px;
   height: 4px;
   background-color: #36b37e;
   border-radius: 24px;
-  margin: 80px auto 0px;
+  margin: 80px auto 0;
 }
 
 .cards {
@@ -133,32 +199,17 @@ section {
   padding-bottom: 20px;
   border: 2px solid #ebf0ee;
 }
-img {
-  /* height: 50%; */
-  width: 100%;
-  border: 2px solid #ebf0ee;
-  object-fit: cover;
-  
-}
+
 .card {
   text-align: center;
 }
-.card h1 {
-  width: auto;
-  height: 57px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin: 10px auto;
-  color: #3a4a42;
-}
+
 .skills {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .skills li {
   align-items: center;
   padding: 8px 12px;
@@ -167,6 +218,11 @@ img {
   list-style-type: none;
   margin: 5px;
 }
+
+button {
+  transition: all 1s ease;
+}
+
 .card button {
   padding: 12px;
   width: 122px;
@@ -177,12 +233,15 @@ img {
   background: #36b37f;
   border-radius: 4px;
 }
+
 .projects {
   display: grid;
   grid-template-columns: 1fr;
+
   /* grid-template-rows: repeat(auto, minmax(400px, auto)); */
   grid-gap: 20px;
 }
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -190,29 +249,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.about-me h1 {
-  margin-bottom: -0.3rem;
-  width: 351px;
-  height: 48px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
-}
-.about-me p {
-  width: 351px;
-  height: 189px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
-  color: #42526e;
-}
+
 .about-me .get-my-resume {
   padding: 12px;
   width: 159px;
@@ -222,32 +259,18 @@ img {
   margin: 20px auto 40px;
   color: white;
 }
+
 .about-me-skills .card {
   border: 2px solid #ebf0ee;
   margin: 0 20px;
   border-radius: 4px;
   background-color: #ebf0ee;
 }
+
 .about-me-skills .nested-card {
   padding: 20px 0;
 }
-.about-me-skills img {
-  margin-top: 40px;
-  object-fit: contain;
-  width: auto;
-  height: auto;
-}
-.nested-card h1 {
-  width: auto;
-  height: 57px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin: 10px auto;
-  color: #3a4a42;
-}
+
 .nested-card button {
   padding: 12px;
   width: 122px;
@@ -258,14 +281,26 @@ img {
   border-radius: 4px;
   color: white;
 }
+
 .about-me-skills {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
 }
+
 .about-me li {
   background: white;
-  color: #36B37E
-
+  color: #36b37e;
 }
 
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #c5e9da;
+}
+
+.get-my-resume:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #c5e9da;
+}
