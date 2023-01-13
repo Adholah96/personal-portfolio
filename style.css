@@ -136,6 +136,9 @@ section {
 img {
   /* height: 50%; */
   width: 100%;
+  border: 2px solid #ebf0ee;
+  object-fit: cover;
+  
 }
 .card {
   text-align: center;
@@ -170,6 +173,7 @@ img {
   height: 48px;
   left: calc(50% - 122px / 2 + 0.5px);
   bottom: 8px;
+  color: white;
   background: #36b37f;
   border-radius: 4px;
 }
@@ -179,7 +183,15 @@ img {
   /* grid-template-rows: repeat(auto, minmax(400px, auto)); */
   grid-gap: 20px;
 }
+.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .about-me h1 {
+  margin-bottom: -0.3rem;
   width: 351px;
   height: 48px;
   font-family: 'Inter';
@@ -187,7 +199,7 @@ img {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  /* text-align: center; */
+  text-align: center;
   color: #172b4d;
 }
 .about-me p {
@@ -198,15 +210,62 @@ img {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  /* text-align: center; */
+  text-align: center;
   color: #42526e;
 }
-.about-me .get-my-resume{
-/* align-items: center; */
-padding: 12px;
-width: 159px;
-height: 48px;
-background: #36B37F;
-border-radius: 4px;
-margin: 20px auto;
+.about-me .get-my-resume {
+  padding: 12px;
+  width: 159px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  margin: 20px auto 40px;
+  color: white;
 }
+.about-me-skills .card {
+  border: 2px solid #ebf0ee;
+  margin: 0 20px;
+  border-radius: 4px;
+  background-color: #ebf0ee;
+}
+.about-me-skills .nested-card {
+  padding: 20px 0;
+}
+.about-me-skills img {
+  margin-top: 40px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+.nested-card h1 {
+  width: auto;
+  height: 57px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px auto;
+  color: #3a4a42;
+}
+.nested-card button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  left: calc(50% - 122px / 2 + 0.5px);
+  bottom: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: white;
+}
+.about-me-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.about-me li {
+  background: white;
+  color: #36B37E
+
+}
+
