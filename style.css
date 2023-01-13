@@ -40,6 +40,41 @@ a:active {
   margin: 0 1.5rem;
 }
 
+.card h1 {
+  /* width: auto;
+  height: 57px; */
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 10px auto;
+  color: #3a4a42;
+}
+
+.about-me h1 {
+  margin-bottom: -0.3rem;
+  width: 351px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.nested-card h1 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+}
+
 main .info-bio h1 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -53,6 +88,18 @@ main .info-bio h1 {
 
 .inner-text {
   color: #36b37f;
+}
+
+.about-me p {
+  width: 351px;
+  height: 189px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
 }
 
 main .info-bio p {
@@ -81,6 +128,20 @@ main .info-bio p {
   color: #505f79;
 }
 
+img {
+  /* height: 50%; */
+  width: 100%;
+  border: 2px solid #ebf0ee;
+  object-fit: cover;
+}
+
+.about-me-skills img {
+  margin-top: 40px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
+
 .social a img {
   height: 1.5rem;
 }
@@ -88,7 +149,7 @@ main .info-bio p {
 main {
   background-image: url('./assets/header-illsutration-mobile.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -101,4 +162,182 @@ main {
   padding: 1rem;
   align-self: center;
   margin-top: 2.5rem;
+}
+
+section {
+  margin-top: 4em;
+}
+
+.desc {
+  width: 327px;
+  height: 97px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  margin: 26px auto;
+  color: #172b4d;
+  padding: 1em;
+  margin-top: -0.5em;
+}
+
+.divider {
+  width: 48px;
+  height: 4px;
+  background-color: #36b37e;
+  border-radius: 24px;
+  margin: 80px auto 0;
+}
+
+.cards {
+  margin: 0 20px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  border: 2px solid #ebf0ee;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+
+  /* text-align: center; */
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  align-items: center;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 5px;
+}
+
+button {
+  transition: all 1s ease;
+}
+
+.nested-card button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  bottom: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.card button {
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  left: calc(50% - 122px / 2 + 0.5px);
+  bottom: 8px;
+  color: white;
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  /* grid-template-rows: repeat(auto, minmax(400px, auto)); */
+  grid-gap: 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me .get-my-resume {
+  padding: 12px;
+  width: 159px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  margin: 20px auto 40px;
+  color: white;
+}
+
+.about-me-skills .card {
+  border: 2px solid #ebf0ee;
+
+  /* margin: 0 20px; */
+  border-radius: 4px;
+  background-color: #ebf0ee;
+  margin: 3%;
+}
+
+.nested-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-skills .nested-card {
+  padding: 20px 0;
+}
+
+.about-me-skills {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.about-me li {
+  background: white;
+  color: #36b37e;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #36b37f;
+}
+
+.card button:enabled {
+  background-color: #36b37f;
+}
+
+.card button:active {
+  background-color: #008552;
+}
+
+.get-my-resume:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #36b37f;
+}
+
+.get-my-resume:enabled {
+  background-color: #36b37f;
+}
+
+.get-my-resume:active {
+  background-color: #008552;
 }
