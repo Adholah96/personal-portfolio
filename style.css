@@ -209,10 +209,12 @@ section {
 }
 
 .skills {
-  display: flex;
+
+  /* display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
+
 
 .skills li {
   align-items: center;
@@ -221,6 +223,9 @@ section {
   border-radius: 4px;
   list-style-type: none;
   margin: 5px;
+
+  position: relative;
+  float: left;
 }
 
 button {
