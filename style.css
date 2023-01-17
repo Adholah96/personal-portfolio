@@ -261,13 +261,13 @@ p {
 }
 
 .contact p {
-  border: 2px solid red;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
   color: #172b4d;
   margin: 120px 25px 50px 25px;
+  padding-top: 56px;
 }
 fieldset {
   border: 0;
@@ -291,4 +291,14 @@ input {
   background: #36b37f;
   border-radius: 4px;
   margin: 0px auto;
+}
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 13rem;
+  list-style: none;
+}
+footer p {
+  margin-top: 2rem;
 }
