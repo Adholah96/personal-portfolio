@@ -100,6 +100,24 @@ p {
   background-position: bottom left;
 }
 
+button {
+  transition: all 1s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #36b37f;
+}
+
+button:enabled {
+  background-color: #36b37f;
+}
+
+button:active {
+  background-color: #008552;
+}
+
 .content-holder {
   margin: 1rem;
   height: 200px;
@@ -250,11 +268,11 @@ p {
 .about-me .content button {
   margin-bottom: -3rem;
 }
+
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   height: 100vh;
 }
 
@@ -267,6 +285,7 @@ p {
   margin: 120px 25px 50px 25px;
   padding-top: 56px;
 }
+
 fieldset {
   border: 0;
   display: flex;
@@ -287,6 +306,7 @@ input {
   font-size: 15px;
   align-items: center;
 }
+
 textarea {
   max-height: 140px;
   padding: 13px;
@@ -296,19 +316,19 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   color: #091e42;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #60c095;
   border-radius: 4px;
 }
+
 .btn {
   display: block;
-  align-items: center;
   padding: 12px;
   width: 129px;
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
-  margin: 0px auto;
+  margin: 0 auto;
   border: 0;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -318,7 +338,7 @@ textarea {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
 }
 
 .social-icons ul {
@@ -328,22 +348,7 @@ textarea {
   margin-top: 15rem;
   list-style: none;
 }
-.email-paragraph {
-  margin-top: 2rem;
-  margin: 10px;
-}
 
-button {
-  transition: all 1s ease;
-}
-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  background-color: #36b37f;
-}
-button:enabled {
-  background-color: #36b37f;
-}
-button:active {
-  background-color: #008552;
+.email-paragraph {
+  margin-top: 3rem 10px 10px 10px;
 }

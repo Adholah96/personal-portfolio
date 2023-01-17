@@ -101,6 +101,7 @@ After you're finished please remove all the comments and instructions!
 
 - **Personal portfolio**
 - **mobile aproach**
+- **form submission**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,6 +209,10 @@ Example:
 - GitHub: [@adholah96](https://github.com/Adholah96)
 - Twitter: [@nerdy*me*](https://twitter.com/nerdy_me_)
 - LinkedIn: [heldricks-arthur](https://linkedin.com/in/heldricks-arthur-59ab2411a)
+
+👤 **Akande Abdulwasiu**
+
+- GitHub: [@adholah96](https://github.com/Newtayo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
