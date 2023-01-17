@@ -252,6 +252,13 @@ p {
 .about-me .content button {
   margin-bottom: -3rem;
 }
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100vh;
+}
 
 .contact p {
   border: 2px solid red;
@@ -260,13 +267,28 @@ p {
   font-size: 40px;
   text-align: center;
   color: #172b4d;
-  margin: 40px 25px;
+  margin: 120px 25px 50px 25px;
+}
+fieldset {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem auto;
+  width: 90%;
 }
 
-form{
-  border: 2px solid red;
-  }
-
-  footer{
-    border: 2px solid red;
-  }
+input {
+  padding: 21px;
+  height: 40px;
+}
+.btn {
+  display: block;
+  align-items: center;
+  padding: 12px;
+  width: 129px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  margin: 0px auto;
+}

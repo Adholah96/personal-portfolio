@@ -186,10 +186,25 @@
         chat please get in touch.
       </p>
       <form action="#">
-        <input type="text" name ="full-name" placeholder ="Full name" required />
-        <input type="email" name ="email-address" placeholder ="Email Address" required />
-        <textarea name="message" placeholder="Enter a Message" id="" cols="30" rows="10"></textarea>
-        <button class="btn" type= "submit"> Get in touch</button>
+        <fieldset>
+        <input type="text" name="full-name" placeholder="Full name" required />
+        <input
+          type="email"
+          name="email-address"
+          placeholder="Email Address"
+          class="name"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Enter a Message"
+          id=""
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
+        </fieldset>
+          <button class="btn" type="submit">Get in touch</button>
       </form>
     </section>
     <footer class="footer">
@@ -224,7 +239,7 @@
           ></a>
         </li>
       </ul>
-      <p> adholah96@gmail.com</p>
+      <p>adholah96@gmail.com</p>
     </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
