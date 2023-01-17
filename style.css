@@ -262,3 +262,7 @@ p {
   color: #172b4d;
   margin: 40px 25px;
 }
+
+form{
+  border: 2px solid red;
+}
