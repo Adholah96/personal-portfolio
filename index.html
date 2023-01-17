@@ -2,160 +2,163 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/5e67ba493b.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <a href="index.html"><h1 class="logo">Welcome</h1></a>
-      <nav class="menu-burger">
-        <div></div>
-        <div></div>
-        <div></div>
+      <nav>
+        <h1>Welcome</h1>
+        <box-icon name="menu"></box-icon>
       </nav>
     </header>
-    <main>
-      <section class="info-bio">
-        <h1>
-          Hey there. I’m Heldricks <br />
-          <span class="inner-text">I’m a software developer</span>
-        </h1>
-        <p>
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-      </section>
-      <ul class="social">
-        <li>
-          <a href="https://twitter.com/nerdy_me_"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://github.com/Adholah96"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/heldricks-arthur-59ab2411a"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a href=""><i class="fa-solid fa-m"></i></a>
-        </li>
-        <li>
-          <a href=""><img src="./assets/angellist.png" alt="" /></a>
-        </li>
-      </ul>
-      <span class="drop"><i class="fa-solid fa-chevron-down"></i></span>
-    </main>
-    <p class="desc">My Recent Work</p>
-    <div class="divider"></div>
-    <section class="projects">
-      <div class="cards">
-        <div class="card">
-          <div><img src="./assets/Snapshoot Portfolio.png" alt="" /></div>
-          <div class="nested-card">
-            <div><h1>Tonic</h1></div>
-            <ul class="skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button">See Project</button>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div><img src="./assets/Snapshoot Portfolio1.png" alt="" /></div>
-          <div class="nested-card">
-            <h1>Multi-Post Stories</h1>
-            <ul class="skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button">See Project</button>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div><img src="./assets/Snapshoot Portfolio2.png" alt="" /></div>
-          <div class="nested-card">
-            <h1>Facebook 360</h1>
-            <ul class="skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button">See Project</button>
-          </div>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <div><img src="./assets/Snapshoot Portfolio3.png" alt="" /></div>
-          <div class="nested-card">
-            <h1>User Navigation</h1>
-            <ul class="skills">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
-            </ul>
-            <button type="button">See Project</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-me">
-      <h1>About me</h1>
+    <section class="hero-section">
+      <h2>
+        Hey there. I’m Heldricks <br />
+        <span>I’m a software developer</span>
+      </h2>
       <p>
         I can help you build a product , feature or website Look through some of
         my work and experience! If you like what you see and have a project you
         need coded, don’t hestiate to contact me.
       </p>
-      <button class="get-my-resume" type="button">Get My Resume</button>
-      <div class="about-me-skills">
+      <ul>
+        <li>
+          <a href="#"
+            ><box-icon type="logo" name="twitter" color="#505F79"></box-icon
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><box-icon type="logo" name="linkedin" color="#505F79"></box-icon
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><box-icon type="logo" name="medium" color="#505F79"></box-icon
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><box-icon name="github" type="logo" color="#505F79"></box-icon
+          ></a>
+        </li>
+        <li>
+          <a href="#"
+            ><box-icon
+              type="logo"
+              name="instagram-alt"
+              color="#505F79"
+            ></box-icon
+          ></a>
+        </li>
+      </ul>
+      <box-icon
+        name="chevron-down-circle"
+        color="#505F79"
+        size="lg"
+        class="chevron"
+      ></box-icon>
+    </section>
+    <h1 class="recent-works">My Recent Works</h1>
+    <div class="divider"></div>
+    <section class="work">
+      <div class="card">
+        <div class="image-holder">
+          <img src="./assets/assets2/portfolio1.png" alt="portfolio1" />
+        </div>
+        <div class="content-holder">
+          <h2>Tonic</h2>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>html</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-holder">
+          <img src="./assets/assets2/portfolio2.png" alt="portfolio2" />
+        </div>
+        <div class="content-holder">
+          <h2>Multi-Post Stories</h2>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>html</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-holder">
+          <img
+            src="./assets/assets2/Snapshoot Portfolio.png"
+            alt="portfolio2"
+          />
+        </div>
+        <div class="content-holder">
+          <h2>Facebook 360</h2>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>html</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-holder">
+          <img src="./assets/assets2/Portfolio4.png" alt="portfolio4" />
+        </div>
+        <div class="content-holder">
+          <h2>Uber Navigation</h2>
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>html</li>
+          </ul>
+          <button type="button">See Project</button>
+        </div>
+      </div>
+    </section>
+    <section class="about-me">
+      <div class="content">
+        <h1>About me</h1>
+        <p>
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don’t hestiate to contact me.
+        </p>
+        <button type="button">Get My Resume</button>
+      </div>
+      <div class="cards">
         <div class="card">
-          <div><img src="./assets/icon-languages.png" alt="" /></div>
-          <div class="nested-card">
-            <h1>Languages</h1>
-            <ul class="skills two">
-              <li>Ruby on rails</li>
-              <li>css</li>
-              <li>JavaScript</li>
-              <li>html</li>
+          <div class="content-holder">
+            <img src="./assets/assets2/icon-languages.png" alt="Language" />
+            <h2>Languages</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>Html</li>
+              <li>Css</li>
+              <li>Ruby</li>
             </ul>
           </div>
         </div>
         <div class="card">
-          <div><img src="./assets/icon-frameworks.png" alt="" /></div>
-          <div class="nested-card">
-            <h1>Frameworks</h1>
-            <ul class="skills">
+          <div class="content-holder">
+            <img src="./assets/assets2/icon-frameworks.png" alt="Frameworks" />
+            <h2>Frameworks</h2>
+            <ul>
               <li>Bootstrap</li>
-              <li>Ruby on rails</li>
+              <li>Ruby on Rails</li>
               <li>RSpec</li>
               <li>Capybara</li>
               <li>Selenium</li>
@@ -163,19 +166,28 @@
           </div>
         </div>
         <div class="card">
-          <div><img src="./assets/icon-skills.png" alt="" /></div>
-          <div class="nested-card">
-            <h1>Skills</h1>
-            <ul class="skills">
-              <li>Codekit</li>
-              <li>Github</li>
+          <div class="content-holder">
+            <img src="./assets/assets2/icon-skills.png" alt="Frameworks" />
+            <h2>Skills</h2>
+            <ul>
+              <li>CodeKit</li>
+              <li>GitHub</li>
               <li>Codepen</li>
-              <li>Github</li>
+              <li>Gitlab</li>
               <li>Terminal</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+    <section class="contact">
+      <p>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </p>
+      <form action="#"></form>
+    </section>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
