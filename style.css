@@ -265,4 +265,8 @@ p {
 
 form{
   border: 2px solid red;
-}
+  }
+
+  footer{
+    border: 2px solid red;
+  }
