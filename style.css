@@ -10,6 +10,11 @@
   padding: 15px;
 }
 
+.nav-list {
+  list-style-type: none;
+  display: none;
+}
+
 .header nav {
   display: flex;
   justify-content: space-between;
@@ -27,7 +32,7 @@
   font-size: 40px;
   text-align: center;
   color: #172b4d;
-  margin-bottom: -1.9em;
+  margin-bottom: 0.5em;
 }
 
 span {
@@ -43,19 +48,19 @@ p {
   margin: 0 24px -1em;
 }
 
-.hero-section ul {
+.icon-list {
   list-style-type: none;
   margin: -40px 80px 0;
 }
 
-.hero-section ul li {
+.icon-list li {
   display: inline-block;
   margin-left: 1em;
 }
 
 .hero-section {
   background-image: url(./assets/assets2/background.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -359,5 +364,73 @@ textarea {
   width: 120px;
   background: black;
   border-radius: 2px;
-  margin: 26rem auto 0.3rem;
+  margin: 4rem auto 0.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header,
+  .header h1,
+  .menu {
+    display: none;
+  }
+  .header-div {
+    display: flex;
+    flex-direction: column;
+    width: 569px;
+    height: 200px;
+    gap: 6rem;
+    align-items: center;
+  }
+  .nav-list {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+    margin-top: -6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .hero-section {
+    background-image: url('./assets/desktop/headerbackground.png');
+    /* object-fit: fill; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+  }
+  .hero-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+  }
+  .hero-section p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #172b4d;
+    /* width: 100%; */
+    font-size: 20px;
+    margin-top: -6rem;
+    transform-origin: top;
+    text-align: center;
+    line-height: 32px;
+  }
+  .icon-list {
+    margin-top: -7rem;
+  }
+  .recent-works h1 {
+    display: block;
+  }
+  .divider {
+    display: none;
+  }
+  .chevron {
+    height: 30px;
+  }
 }
