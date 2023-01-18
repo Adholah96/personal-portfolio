@@ -351,4 +351,13 @@ textarea {
 
 .email-paragraph {
   margin-top: 3rem 10px 10px 10px;
+  padding-top: 2rem;
+}
+
+.end-line {
+  height: 5px;
+  width: 120px;
+  background: black;
+  border-radius: 2px;
+  margin: 26rem auto 0;
 }
