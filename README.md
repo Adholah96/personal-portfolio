@@ -102,6 +102,7 @@ After you're finished please remove all the comments and instructions!
 - **Personal portfolio**
 - **mobile aproach**
 - **form submission**
+- **Responsiveness**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -223,8 +224,7 @@ Example:
 <!-- > Describe 1 - 3 features you will add to the project. -->
 
 - **Better UI/UX style**
-- **Responsive Design**
-- **Website version**
+- **More Functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
