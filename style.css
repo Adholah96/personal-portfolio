@@ -363,7 +363,6 @@ textarea {
 .end-line {
   height: 5px;
   width: 120px;
-  background: black;
   border-radius: 2px;
   margin: 4rem auto 0.3rem;
 }
@@ -462,6 +461,7 @@ textarea {
   }
 
   .content {
+    gap: -2rem;
     background-image: url('./assets/desktop/aboutmeleft.png');
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -485,8 +485,8 @@ textarea {
   }
 
   .contact p {
-    margin: 0 -84px 11px 21px;
-    font-size: 15px;
+    margin: 0 -84px -26px 21px;
+    font-size: 20px;
     line-height: 30px;
   }
 
@@ -559,5 +559,9 @@ textarea {
 
   a {
     text-decoration: none;
+  }
+
+  span {
+    letter-spacing: 2px;
   }
 }
