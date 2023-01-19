@@ -458,6 +458,60 @@ textarea {
     background-position: top right;
   }
   .p-length {
-    width: 70%;
+    width: 60%;
+  }
+  .contact {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+  }
+  .contact p {
+    margin: 0px -84px 11px 21px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .last-p {
+    width: 40%;
+  }
+  fieldset {
+    border: 0;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 0.6rem;
+    width: 60%;
+  }
+  textarea {
+    height: 5rem;
+    max-height: 140px;
+    padding: 6px;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  input {
+    padding: 10px;
+    font-size: 10px;
+  }
+  form {
+    width: 60%;
+    margin-top: 8rem;
+  }
+  .btn {
+    padding: 9px;
+    width: 106px;
+    height: 35px;
+    /* margin: 0 0 0 7.5rem; */
+    font-size: 10px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+  .backgroundleft {
+    background-image: url('./assets/desktop/bottomleft.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    width: 100px;
+    height: 200px;
+    margin-top: -7rem;
   }
 }
