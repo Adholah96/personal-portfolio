@@ -20,6 +20,21 @@
   justify-content: space-between;
 }
 
+.header-div h2{
+  animation-duration: 2s;
+  animation-name: sliding;
+
+}
+
+@keyframes sliding {
+
+  from{
+    margin-left: 0%;
+  }
+  to{
+    margin-right: 100%;
+  }
+}
 .header h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -112,15 +127,9 @@ button {
 button:hover {
   cursor: pointer;
   transform: scale(1.1);
-  background-color: #36b37f;
-}
-
-button:enabled {
-  background-color: #36b37f;
-}
-
-button:active {
-  background-color: #008552;
+  background-color: #fff;
+  color: #36b37f;
+  border: 2px solid #36b37f;
 }
 
 .content-holder {
