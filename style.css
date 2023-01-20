@@ -112,15 +112,9 @@ button {
 button:hover {
   cursor: pointer;
   transform: scale(1.1);
-  background-color: #36b37f;
-}
-
-button:enabled {
-  background-color: #36b37f;
-}
-
-button:active {
-  background-color: #008552;
+  background-color: #fff;
+  color: #36b37f;
+  border: 2px solid #36b37f;
 }
 
 .content-holder {
