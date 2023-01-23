@@ -112,7 +112,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- > Add a link to your deployed project. -->
 
-- [Live Demo Link coming soon](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://adholah96.github.io/personal-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
