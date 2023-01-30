@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .bar {
   display: block;
   width: 25px;
@@ -27,12 +28,15 @@
   background-color: black;
   transition: all 0.3s ease-in-out;
 }
+
 .menu.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
+
 .menu.active .bar:nth-child(2) {
   opacity: 0;
 }
+
 .menu.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -42,7 +46,19 @@
   font-weight: 600;
   font-size: 20px;
 }
-.window{
+
+.hero-section {
+  background-image: url(./assets/assets2/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.window {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -50,28 +66,33 @@
   transition: 0.3s;
   left: -100%;
 }
-.window-list{
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-display: flex;
-color: #3A4A42;
-display: flex;
-flex-direction: column;
-padding: 35px;
-list-style-type: none;
 
+.window-list {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  color: #3a4a42;
+  flex-direction: column;
+  padding: 35px;
+  list-style-type: none;
 }
 
-.window.active{
+.window.active {
   left: 0;
 }
-.window-list li a{
+
+.hero-section a {
+  color: #505f79;
+}
+
+.window-list li a {
   text-decoration: none;
 }
-.window-list li{
+
+.window-list li {
   margin-bottom: 40px;
 }
 
@@ -83,7 +104,6 @@ list-style-type: none;
   color: #172b4d;
   margin-bottom: 0.5em;
 }
-
 
 span {
   color: #36b37e;
@@ -106,21 +126,6 @@ p {
 .icon-list li {
   display: inline-block;
   margin-left: 1em;
-}
-
-.hero-section {
-  background-image: url(./assets/assets2/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.hero-section a {
-  color: #505f79;
 }
 
 .chevron {
@@ -439,7 +444,6 @@ textarea {
     display: flex;
     justify-content: center;
     gap: 20px;
-
   }
 
   .hero-section {
