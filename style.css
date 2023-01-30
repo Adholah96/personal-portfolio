@@ -29,6 +29,8 @@
   transition: all 0.3s ease-in-out;
 }
 
+
+
 .menu.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -82,6 +84,8 @@
 
 .window.active {
   left: 0;
+  top: 5;
+  
 }
 
 .hero-section a {
