@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   padding: 15px;
 }
@@ -20,10 +24,91 @@
   justify-content: space-between;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 .header h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+
+.hero-section {
+  background-image: url(./assets/assets2/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.window {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  transition: 0.3s;
+  left: -100%;
+}
+
+.window-list {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  color: #3a4a42;
+  flex-direction: column;
+  padding: 35px;
+  list-style-type: none;
+}
+
+.window.active {
+  left: 0;
+  top: 0;
+}
+
+.menu.active {
+  z-index: 1;
+  position: fixed;
+  right: 2rem;
+}
+
+.menu-link.active {
+  color: #36b37e;
+}
+
+.hero-section a {
+  color: #505f79;
+}
+
+.window-list li a {
+  text-decoration: none;
+}
+
+.window-list li {
+  margin-bottom: 40px;
 }
 
 .hero-section h2 {
@@ -56,21 +141,6 @@ p {
 .icon-list li {
   display: inline-block;
   margin-left: 1em;
-}
-
-.hero-section {
-  background-image: url(./assets/assets2/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.hero-section a {
-  color: #505f79;
 }
 
 .chevron {
@@ -350,7 +420,7 @@ textarea {
 }
 
 .email-paragraph {
-  margin-top: 3rem 10px 10px 10px;
+  margin: 3rem 10px 10px 10px;
   padding-top: 2rem;
 }
 
@@ -387,7 +457,7 @@ textarea {
     color: #344563;
     margin-top: -6rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
   }
 
