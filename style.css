@@ -754,15 +754,15 @@ textarea {
     gap: 10px;
     flex-wrap: wrap;
     position: absolute;
-    right: 35px;
+    right: -33px;
   }
 
   .modal {
     position: fixed;
     z-index: 10;
     left: 20%;
-    height: unset;
-    width: 40%;
+    height: 550px;
+    width: 60%;
   }
 
   .modal-p {
@@ -777,5 +777,10 @@ textarea {
     background: #ebecf0;
     border-radius: 8px;
     margin-bottom: 5px;
+  }
+
+  .modal-image-container img {
+    height: 300px;
+    object-fit: cover;
   }
 }

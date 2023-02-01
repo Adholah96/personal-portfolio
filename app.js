@@ -18,7 +18,7 @@ const cardArray = [
     title: 'facebook',
     img: 'Portfolio1.png',
     description:
-      'lorem ipusumlorem ipusumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlore',
+      'lorem ipusumlorem ipusumloremusumloreipusumlorem ipusumlorem ipusurem ipusumlumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlomlorem ipusumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlo',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
     seeLive: 'https://adholah96.github.io/personal-portfolio/',
     seeSource: 'https://github.com/Adholah96/personal-portfolio',
