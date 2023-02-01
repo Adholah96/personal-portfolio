@@ -17,45 +17,57 @@ document.querySelectorAll('.menu-link').forEach((k) =>
 const cardArray = [
   {
     title: 'facebook',
-    img: '',
+    img: 'Portfolio1.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://adholah96.github.io/personal-portfolio/',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
   {
     title: 'Multi Post Stories',
-    img: '',
+    img: 'Portfolio2.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://adholah96.github.io/personal-portfolio/',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
   {
     title: 'Facebook 360',
-    img: '',
+    img: 'Portfolio2.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://adholah96.github.io/personal-portfolio/',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
   {
     title: 'Uber Navigation',
-    img: '',
+    img: 'Portfolio4.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://adholah96.github.io/personal-portfolio/',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
   {
     title: 'Calculator',
-    img: '',
+    img: 'Portfolio4.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://adholah96.github.io/personal-portfolio/',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
   {
     title: 'Twitter',
-    img: '',
+    img: 'Portfolio1.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
+    seeLive: 'https://adholah96.github.io/personal-portfolio/',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
 ]
 
@@ -75,7 +87,31 @@ cardArray.forEach((data, val) => {
     content += `<li>${techitem}</li>`
   })
   content += '</ul>'
-  content += '<button type="button">See Project</button>'
+  content += `<button type="button" id="see-project-${val}">See Project</button>`
   content += '</div>'
   assignCardValues.innerHTML += content
+})
+function modalData(data) {
+  document
+    .getElementById('modal-image')
+    .setAttribute('src', './assets/assets2/'.concat(data.img))
+  document.getElementById('modal-title').innerText = data.title
+  document.getElementById('modal-ul').innerHTML = ''
+  data.technology.forEach((techitem) => {
+    const ul = document.getElementById('modal-ul')
+    ul.innerHTML += `<li>${techitem}</li>`
+  })
+  document.getElementById('modal-description').innerText = data.description
+  document.getElementById('see-live').setAttribute('href', data.seeLive)
+  document.getElementById('see-source').setAttribute('href', data.seeSource)
+}
+cardArray.forEach((values, val) => {
+  document.getElementById('see-project-'.concat(val)).addEventListener('click', () => {
+      document.getElementById('modal').classList.add('active')
+      modalData(values)
+    })
+})
+
+document.getElementById('close-modal').addEventListener('click', () => {
+  document.getElementById('modal').classList.remove('active')
 })

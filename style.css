@@ -437,6 +437,11 @@ textarea {
   border: 2px solid #ebf0ee;
   margin: 0 7%;
   border-radius: 10px;
+  display: none;
+  transition: 0.3 ease-in-out;
+}
+.modal.active {
+  display: block;
 }
 .modal-image-container {
   position: relative;

@@ -90,19 +90,19 @@
 
     <!-- modal design -->
 
-    <div class="modal">
+    <div class="modal" id="modal">
       <div class="modal-image-container">
-        <button type="button">X</button>
-        <img src="./assets/modal phone/modal image.png" alt="" />
+        <button type="button" id="close-modal">X</button>
+        <img src="./assets/modal phone/modal image.png" alt="modal-image" id="modal-image"/>
       </div>
       <div class="modal-content">
-        <h2>Facebook</h2>
-        <ul>
+        <h2 id="modal-title">Facebook</h2>
+        <ul id="modal-ul">
           <li>Ruby on Rails</li>
           <li>Css</li>
           <li>Javascript</li>
         </ul>
-        <p class="modal-p">
+        <p class="modal-p" id="modal-description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
           incidunt eius. Consectetur totam officia libero repellat ullam animi
           quasi omnis voluptates error, deserunt quidem itaque quaerat in
@@ -117,11 +117,11 @@
           placeat..
         </p>
         <div class="button-container">
-          <button type="button">
+          <button type="button" id="see-live">
             See Live
             <box-icon name="right-top-arrow-circle" color="#ffffff"></box-icon>
           </button>
-          <button type="button">
+          <button type="button" id="see-source">
             See Source
             <box-icon type="logo" color="#fff" name="github"></box-icon>
           </button>
