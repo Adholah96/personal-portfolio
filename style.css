@@ -262,6 +262,20 @@ button:hover {
   color: #42526e;
 }
 
+.modal-image-container img {
+  width: 100%;
+}
+
+.button-container {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .about-me button {
   padding: 12px;
   width: 159px;
@@ -333,6 +347,33 @@ image .cards .card {
   font-style: normal;
   font-weight: 600;
   color: #36b37e;
+}
+
+.modal-image-container button {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: 0;
+  padding: 10px;
+  color: black;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.button-container button {
+  padding: 10px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
 }
 
 .about-me .content button {
@@ -438,50 +479,36 @@ textarea {
   margin: 0 7%;
   border-radius: 10px;
   display: none;
-  transition: 0.3 ease-in-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  transition: 0.3s ease-in-out;
   background-color: white;
-  height: 90%;
-  
+  position: fixed;
+  z-index: 10;
 }
+
 .modal.active {
   display: block;
 }
+
 .modal-image-container {
   position: relative;
   padding: 10px;
 }
-.modal-image-container img {
-  width: 100%;
-  object-fit: fit;
-}
-.modal-image-container button {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  border: 0;
-  padding: 10px;
-  color: black;
-  opacity: 0.5;
-  font-size: 15px;
-  font-weight: 600;
-}
+
 .modal-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
 }
+
 .modal ul {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: start;
+  margin-left: 10px;
 }
+
 .modal h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -491,45 +518,24 @@ textarea {
   color: #172b4d;
   margin: 10px;
 }
+
 .modal ul li {
   padding: 8px 12px;
   background: #ebf0ee;
   border-radius: 4px;
-  margin: 10px;
+  margin: 2px;
 }
+
 .modal-p {
   all: revert;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
   color: #344563;
   margin: 10px;
 }
-.button-container {
-  width: 100%;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.button-container button {
-  padding: 12px;
-  background: #36b37f;
-  border-radius: 4px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-}
+
 .box-icon-live {
   text-align: center;
 }
@@ -736,6 +742,7 @@ textarea {
   .nav-list li a:hover {
     color: #36b37e;
   }
+
   .button-container {
     width: 40%;
     margin: 10px;
@@ -747,14 +754,17 @@ textarea {
     position: absolute;
     right: 35px;
   }
+
+  .modal {
+    position: fixed;
+    z-index: 10;
+    left: 10%;
+    height: unset;
+    width: 40%;
+  }
+
   .modal-p {
-    padding-bottom: 20px;
-  }
-  .modal-image-container {
-    padding: 10px;
-  }
-  .modal-image-container img {
-    width: 100%;
+    padding-bottom: 10px;
   }
 
   .modal-image-container button {
