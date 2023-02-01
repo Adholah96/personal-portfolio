@@ -11,6 +11,7 @@ document.querySelectorAll('.menu-link').forEach((k) => k.addEventListener('click
 }));
 
 // work section content
+/* eslint-disable no-restricted-globals */
 
 const cardArray = [
   {
@@ -53,10 +54,10 @@ const cardArray = [
     title: 'Calculator',
     img: 'Portfolio4.png',
     description:
-      'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore rem ipusumlorem ipusumlorem ipusumloremrem ipusumlorem ipusumlorem ipusumlorem sumlorem ipusumlorem ipusumlorem ipusumlore rem ipusumlorem ipusumlorem ipusumloremrem ipusumlorem ipussumlorem ipusumlorem ipusumlorem ipusumlore rem ipusumlorem ipusumlorem ipusumloremrem ipusumlorem ipussumlorem ipusumlorem ipusumlorem ipusumlore rem ipusumlorem ipusumlorem ipusumloremrem ipusumlorem ipus',
+      'lorem ipusumlorem ipusumlorem ippusumlore rem ipusumlusumlolorem ipusumlorem ipusumlore rem ipusumlorem ipusumlorem ipusumloremrem ipusumlorem ipus',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
     seeLive: 'https://adholah96.github.io/personal-portfolio/',
-    seeSource: 'https://github.com/Adholah96/personal-portfolio',
+    seeSource: 'https://github.com/Adholah96/personal-portfolio/',
   },
   {
     title: 'Twitter',
@@ -76,7 +77,7 @@ const assignCardValues = document.getElementById('work-link');
 cardArray.forEach((data, val) => {
   let content = '<div class="card">';
   content += '<div class="image-holder">';
-  content += '<img src="./assets/assets2/portfolio1.png" alt="portfolio1"/>';
+  content += `<img src="./assets/assets2/${data.img}" alt="portfolio1"/>`;
   content += '</div>';
   content += '<div class="content-holder">';
   content += `<h2>${data.title}</h2>`;
@@ -100,8 +101,12 @@ function modalData(data) {
     ul.innerHTML += `<li>${techitem}</li>`;
   });
   document.getElementById('modal-description').innerText = data.description;
-  document.getElementById('see-live').setAttribute('href', data.seeLive);
-  document.getElementById('see-source').setAttribute('href', data.seeSource);
+  document.getElementById('see-live').addEventListener('click', () => {
+    location.href = data.seeLive;
+  });
+  document.getElementById('see-source').addEventListener('click', () => {
+    location.href = data.seeSource;
+  });
 }
 cardArray.forEach((values, val) => {
   document

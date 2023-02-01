@@ -483,10 +483,12 @@ textarea {
   background-color: white;
   position: fixed;
   z-index: 10;
+  top: 0;
 }
 
 .modal.active {
   display: block;
+  backdrop-filter: blur(20px);
 }
 
 .modal-image-container {
@@ -758,13 +760,13 @@ textarea {
   .modal {
     position: fixed;
     z-index: 10;
-    left: 10%;
+    left: 20%;
     height: unset;
     width: 40%;
   }
 
   .modal-p {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
   }
 
   .modal-image-container button {
