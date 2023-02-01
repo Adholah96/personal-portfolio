@@ -476,7 +476,7 @@ textarea {
 
 .modal {
   border: 2px solid #ebf0ee;
-  margin: 0 7%;
+  margin: 15% 7%;
   border-radius: 10px;
   display: none;
   transition: 0.3s ease-in-out;
@@ -488,7 +488,7 @@ textarea {
 
 .modal.active {
   display: block;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
 }
 
 .modal-image-container {
@@ -763,6 +763,7 @@ textarea {
     left: 20%;
     height: 550px;
     width: 60%;
+    margin: 4%;
   }
 
   .modal-p {

@@ -114,6 +114,7 @@ cardArray.forEach((values, val) => {
     .addEventListener('click', () => {
       document.getElementById('modal').classList.add('active');
       modalData(values);
+      document.getElementById('modal').classList.add('blur');
     });
 });
 
