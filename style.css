@@ -439,6 +439,14 @@ textarea {
   border-radius: 10px;
   display: none;
   transition: 0.3 ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  height: 90%;
+  
 }
 .modal.active {
   display: block;
