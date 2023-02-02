@@ -563,10 +563,10 @@ textarea {
 
 small {
   color: #f14848;
-  font-style: 'Inter', sans-serif;
   font-size: 15px;
   display: none;
 }
+
 .error {
   display: block;
 }
@@ -813,12 +813,13 @@ small {
     height: 300px;
     object-fit: cover;
   }
+
   small {
     color: #f14848;
-    font-style: 'Inter', sans-serif;
     font-size: 15px;
     display: none;
   }
+
   .error {
     display: block;
   }
