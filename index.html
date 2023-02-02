@@ -198,7 +198,14 @@
           to chat please get in touch.
         </p>
       </div>
-      <form action="https://formspree.io/f/xknagban" method="post">
+
+      <!-- form section -->
+
+      <form
+        action="https://formspree.io/f/xknagban"
+        method="post"
+        id="getintouch"
+      >
         <fieldset>
           <input
             type="text"
@@ -210,10 +217,13 @@
           <input
             type="email"
             name="email-address"
+            id="yourMail"
             placeholder="Email Address"
             class="name"
             required
           />
+          <small>Message not sent, consider using lower cases</small>
+          <div class="error"></div>
           <textarea
             name="message"
             placeholder="Enter a Message"
