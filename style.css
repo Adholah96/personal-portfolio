@@ -474,6 +474,24 @@ textarea {
 
 /* style modal */
 
+.backdrop {
+  position: fixed;
+  background-color: rgba(193, 199, 208, 0.9);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  z-index: 1;
+  display: none;
+}
+
+.backdrop.active {
+  display: block;
+}
+
 .modal {
   border: 2px solid #ebf0ee;
   margin: 15% 7%;
@@ -488,7 +506,6 @@ textarea {
 
 .modal.active {
   display: block;
-  backdrop-filter: blur(10px);
 }
 
 .modal-image-container {

@@ -114,10 +114,11 @@ cardArray.forEach((values, val) => {
     .addEventListener('click', () => {
       document.getElementById('modal').classList.add('active');
       modalData(values);
-      document.getElementById('modal').classList.add('blur');
+      document.querySelector('.backdrop').classList.add('active');
     });
 });
 
 document.getElementById('close-modal').addEventListener('click', () => {
   document.getElementById('modal').classList.remove('active');
+  document.querySelector('.backdrop').classList.remove('active');
 });
