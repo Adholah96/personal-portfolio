@@ -562,8 +562,8 @@ textarea {
 /* form error and success message styling */
 
 small {
-  color: #be0202;
-  display: none;
+  color: #f14848;
+  font-style: 'Inter', sans-serif;
   font-size: 15px;
   display: none;
 }
@@ -814,8 +814,8 @@ small {
     object-fit: cover;
   }
   small {
-    color: #be0202;
-    display: none;
+    color: #f14848;
+    font-style: 'Inter', sans-serif;
     font-size: 15px;
     display: none;
   }
