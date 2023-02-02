@@ -16,7 +16,7 @@ document.querySelectorAll('.menu-link').forEach((k) => k.addEventListener('click
 const cardArray = [
   {
     title: 'facebook',
-    img: 'Portfolio1.png',
+    img: 'portfolio1.png',
     description:
       'lorem ipusumlorem ipusumloremusumloreipusumlorem ipusumlorem ipusurem ipusumlumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlomlorem ipusumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlo',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
@@ -25,7 +25,7 @@ const cardArray = [
   },
   {
     title: 'Multi Post Stories',
-    img: 'Portfolio2.png',
+    img: 'portfolio2.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
@@ -34,7 +34,7 @@ const cardArray = [
   },
   {
     title: 'Facebook 360',
-    img: 'Portfolio2.png',
+    img: 'portfolio2.png',
     description:
       'lorem ipusumlorem ipusumlorem ipusumlorem ipusumlorem ipusumlore',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
@@ -61,7 +61,7 @@ const cardArray = [
   },
   {
     title: 'Twitter',
-    img: 'Portfolio1.png',
+    img: 'portfolio1.png',
     description:
       'ncidunt eius. Consectetur totam of o neque quaerat.Distinctio dmenda ',
     technology: ['html', 'css', 'javascript', 'ruby on rails'],
@@ -121,4 +121,18 @@ cardArray.forEach((values, val) => {
 document.getElementById('close-modal').addEventListener('click', () => {
   document.getElementById('modal').classList.remove('active');
   document.querySelector('.backdrop').classList.remove('active');
+});
+
+// email form validation
+
+const form = document.getElementById('getintouch');
+const emailAddress = form.elements.yourMail;
+const errorText = document.querySelector('small');
+
+form.addEventListener('submit', (event) => {
+  const emailValue = emailAddress.value;
+  if (emailValue !== emailValue.toLowerCase()) {
+    event.preventDefault();
+    errorText.classList.add('error');
+  }
 });

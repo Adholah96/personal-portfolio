@@ -559,6 +559,18 @@ textarea {
   text-align: center;
 }
 
+/* form error and success message styling */
+
+small {
+  color: #f14848;
+  font-size: 15px;
+  display: none;
+}
+
+.error {
+  display: block;
+}
+
 @media only screen and (min-width: 768px) {
   header,
   .header h1,
@@ -800,5 +812,15 @@ textarea {
   .modal-image-container img {
     height: 300px;
     object-fit: cover;
+  }
+
+  small {
+    color: #f14848;
+    font-size: 15px;
+    display: none;
+  }
+
+  .error {
+    display: block;
   }
 }
