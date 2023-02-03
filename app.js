@@ -137,7 +137,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// local storage
+// local storage for handling form information
 const userName = form.elements.yourName;
 const userEmail = form.elements.yourMail;
 const userMessage = form.elements.yourMessage;
