@@ -137,37 +137,37 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// local storage 
-const userName = form.elements[0]; 
-const userEmail = form.elements[1]; 
-const userMessage = form.elements[2]; 
+// local storage
+const userName = form.elements.yourName;
+const userEmail = form.elements.yourMail;
+const userMessage = form.elements.yourMessage;
 
-function fillStorage(){
+function fillStorage() {
   // user values stored in object
   const userValues = {
-    name : userName.value, 
-    email : userEmail.value, 
-    message : userMessage.value,
-  }
-  localStorage.setItem('userValues', JSON.stringify(userValues))
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+  localStorage.setItem('userValues', JSON.stringify(userValues));
 }
-function prePopulateForm(){
-  const storedValues = JSON.parse(localStorage.getItem('userValues')); 
-  const currentUser = storedValues.name; 
-  const currentEmail = storedValues.email; 
-  const currentMessage = storedValues.message; 
-  form.elements[0].value = currentUser;
-  form.elements[1].value = currentEmail;
-  form.elements[2].value = currentMessage;
+function prePopulateForm() {
+  const storedValues = JSON.parse(localStorage.getItem('userValues'));
+  const currentUser = storedValues.name;
+  const currentEmail = storedValues.email;
+  const currentMessage = storedValues.message;
+  form.elements.yourName.value = currentUser;
+  form.elements.yourMail.value = currentEmail;
+  form.elements.yourMessage.value = currentMessage;
 }
-if(!localStorage.getItem('userValues')){
-  fillStorage(); 
-}else{
-  prePopulateForm(); 
+if (!localStorage.getItem('userValues')) {
+  fillStorage();
+} else {
+  prePopulateForm();
 }
 
 //  if form values are changed
 
-userName.onchange = fillStorage; 
-userEmail.onchange = fillStorage; 
-userMessage.onchange = fillStorage; 
+userName.onchange = fillStorage;
+userEmail.onchange = fillStorage;
+userMessage.onchange = fillStorage;
