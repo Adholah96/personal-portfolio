@@ -136,3 +136,38 @@ form.addEventListener('submit', (event) => {
     errorText.classList.add('error');
   }
 });
+
+// local storage for handling form information
+const userName = form.elements.yourName;
+const userEmail = form.elements.yourMail;
+const userMessage = form.elements.yourMessage;
+
+function fillStorage() {
+  // user values stored in object
+  const userValues = {
+    name: userName.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+  localStorage.setItem('userValues', JSON.stringify(userValues));
+}
+function prePopulateForm() {
+  const storedValues = JSON.parse(localStorage.getItem('userValues'));
+  const currentUser = storedValues.name;
+  const currentEmail = storedValues.email;
+  const currentMessage = storedValues.message;
+  form.elements.yourName.value = currentUser;
+  form.elements.yourMail.value = currentEmail;
+  form.elements.yourMessage.value = currentMessage;
+}
+if (!localStorage.getItem('userValues')) {
+  fillStorage();
+} else {
+  prePopulateForm();
+}
+
+//  if form values are changed
+
+userName.onchange = fillStorage;
+userEmail.onchange = fillStorage;
+userMessage.onchange = fillStorage;
