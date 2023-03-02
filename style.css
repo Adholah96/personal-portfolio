@@ -167,6 +167,7 @@ p {
 
 .image-holder img {
   width: 100%;
+  height: 300px;
 }
 
 .content {
@@ -237,6 +238,9 @@ button:hover {
 .card {
   border-radius: 10px;
   border: 2px solid #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .about-me {
@@ -811,7 +815,6 @@ small {
 
   .modal-image-container img {
     height: 300px;
-    object-fit: cover;
   }
 
   small {

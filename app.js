@@ -15,13 +15,13 @@ document.querySelectorAll('.menu-link').forEach((k) => k.addEventListener('click
 
 const cardArray = [
   {
-    title: 'facebook',
-    img: 'portfolio1.png',
+    title: 'TODO LIST',
+    img: 'to-do-list.png',
     description:
-      'lorem ipusumlorem ipusumloremusumloreipusumlorem ipusumlorem ipusurem ipusumlumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlomlorem ipusumloremusumloreipusumlorem ipusumlorem ipusumlorem ipusumlo',
-    technology: ['html', 'css', 'javascript', 'ruby on rails'],
-    seeLive: 'https://adholah96.github.io/personal-portfolio/',
-    seeSource: 'https://github.com/Adholah96/personal-portfolio',
+      'TODO LIST is a javascript project that that users can use to manage their day to day tasks. users can add tasks, clear completed and edit them in case of any change.',
+    technology: ['html', 'css', 'javascript'],
+    seeLive: 'https://adholah96.github.io/to-do-list/dist/',
+    seeSource: 'https://github.com/Adholah96/to-do-list',
   },
   {
     title: 'Multi Post Stories',
