@@ -68,7 +68,7 @@ const cardArray = [
     seeLive: 'https://adholah96.github.io/personal-portfolio/',
     seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
-]
+];
 
 // load cards dynamically
 
