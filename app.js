@@ -16,7 +16,7 @@ document.querySelectorAll('.menu-link').forEach((k) => k.addEventListener('click
 const cardArray = [
   {
     title: 'TODO LIST',
-    img: 'to-do-list.png',
+    img: 'first-project.png',
     description:
       'TODO LIST is a javascript project that that users can use to manage their day to day tasks. users can add tasks, clear completed and edit them in case of any change.',
     technology: ['html', 'css', 'javascript'],
@@ -68,7 +68,7 @@ const cardArray = [
     seeLive: 'https://adholah96.github.io/personal-portfolio/',
     seeSource: 'https://github.com/Adholah96/personal-portfolio',
   },
-];
+]
 
 // load cards dynamically
 
@@ -77,7 +77,7 @@ const assignCardValues = document.getElementById('work-link');
 cardArray.forEach((data, val) => {
   let content = '<div class="card">';
   content += '<div class="image-holder">';
-  content += `<img src="./assets/assets2/${data.img}" alt="portfolio1"/>`;
+  content += `<img src="./assets/assets2/${data.img}" alt="todo image"/>`;
   content += '</div>';
   content += '<div class="content-holder">';
   content += `<h2>${data.title}</h2>`;
